@@ -7,7 +7,7 @@ from eis_core import eis_core_quat
 from eis_core import eis_core_config_loader
 from scipy.spatial import distance
 import ipdb
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from pyquaternion import Quaternion
 from collections import deque
 from numpy.linalg import inv

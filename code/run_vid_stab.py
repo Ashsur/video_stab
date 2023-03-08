@@ -27,7 +27,7 @@ gyro_log_path = log_dir + '/imu.log'
 
 # load video
 video_ext_path = log_dir + '/*.mp4'
-video_filename = glob.glob(video_ext_path)[0].split('/')[-1]
+video_filename = glob.glob(video_ext_path)[0].split('\\')[-1]
 video_path = log_dir + '/' + video_filename
 
 # load debug/eis param

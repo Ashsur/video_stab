@@ -29,13 +29,13 @@ class EIS_SIGNAL(Thread):
 
         print("load cmos log....")
         # read cmos sensor log
-        self.cmos_sensor_log = np.loadtxt(cmos_log_path)
+        self.cmos_sensor_log = np.loadtxt(cmos_log_path, delimiter = "_")
         # cmos sensor initialize
         self.cmos_sensor = CMOS_SENSOR(deque(self.cmos_sensor_log))
         
         print("load gyro log....")
         # read gyro log
-        self.gyro_sensor_log = np.loadtxt(gyro_log_path)
+        self.gyro_sensor_log = np.loadtxt(gyro_log_path, delimiter = "_")
         # gyro sensor initialize
         self.gyro_sensor = GYRO_SENSOR(deque(self.gyro_sensor_log[:,gyro_idx]))# TODO: orginize in unifteformat 
         

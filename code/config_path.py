@@ -1,6 +1,7 @@
 # configuration directory
 #config_file_dir = "../../config/hc2_config/"
-config_file_dir = "../../config/iqoo3_config/"
+# config_file_dir = "../../config/iqoo3_config/"
+config_file_dir = "../config/"
 
 #config file path
 eis_config_path = config_file_dir + "eis_config.json"
